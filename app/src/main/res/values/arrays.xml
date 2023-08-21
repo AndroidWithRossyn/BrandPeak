@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="cat_colors">
+        <item>#F63375</item>
+        <item>#8247EA</item>
+        <item>#F35D52</item>
+        <item>#3AB83F</item>
+        <item>#48ADF0</item>
+        <item>#F16354</item>
+        <item>#1FBD90</item>
+        <item>#9C27B0</item>
+        <item>#BF6C24</item>
+        <item>#F9AD35</item>
+    </string-array>
+
+
+    <array name="fonts">
+        <item>default</item>
+        <item>1.ttf</item>
+        <item>2.otf</item>
+        <item>3.ttf</item>
+        <item>4.ttf</item>
+        <item>5.otf</item>
+        <item>6.TTF</item>
+        <item>7.otf</item>
+        <item>8.otf</item>
+        <item>9.TTF</item>
+        <item>10.TTF</item>
+        <item>11.ttf</item>
+        <item>12.ttf</item>
+        <item>13.ttf</item>
+        <item>14.ttf</item>
+        <item>15.TTF</item>
+        <item>19.TTF</item>
+        <item>20.otf</item>
+        <item>23.otf</item>
+    </array>
+</resources>

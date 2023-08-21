@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:id="@+id/main_constraint"
+    android:layoutAnimation="@anim/layout_animation"
+    android:background="@color/alpha_active_color"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_feature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_8ssp"
+        android:text="@string/trending"
+        android:maxLength="25"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        app:fonts='@{"bold"}'
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textSize='@{"font_body_size"}' />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="@dimen/_50ssp"
+        android:layout_height="@dimen/_40ssp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/tv_feature"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_view_trending"
+        app:layout_constraintStart_toEndOf="@+id/tv_feature"
+        app:layout_constraintTop_toTopOf="@+id/tv_feature"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="new_anim.json"
+        app:lottie_loop="true" />
+
+
+    <TextView
+        android:id="@+id/txt_view_trending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_2ssp"
+        android:layout_marginRight="@dimen/_8ssp"
+        android:text="@string/view_all"
+        app:fonts='@{"bold"}'
+        app:layout_constraintBottom_toBottomOf="@+id/tv_feature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_feature"
+        app:textSize='@{"font_body_s_size"}' />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_feature"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/_5ssp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_feature" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

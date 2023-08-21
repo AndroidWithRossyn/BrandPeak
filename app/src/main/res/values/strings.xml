@@ -1,0 +1,317 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">BrandPeak</string>
+
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+
+    <!--    SplashScreen-->
+    <string name="splash_loading">Loading</string>
+    <string name="error_message__no_internet">No internet connection.</string>
+
+    <!--IntroScreen-->
+    <string name="intro_next">NEXT</string>
+    <string name="intro_skip">SKIP</string>
+    <string name="intro_show_again">Don\'t Show Again</string>
+    <string name="intro_title_1">Grow \n Your Business</string>
+    <string name="intro_dec_1">We will help you to grow your business by providing digital content</string>
+    <string name="intro_title_2">Easy \n Save and Share</string>
+    <string name="intro_dec_2">Simply Download and Share to Your Social Media Account</string>
+    <string name="intro_title_3">Festival Posts</string>
+    <string name="intro_dec_3">Grab an Opportunity to connect with your clients on each festival by creative posts</string>
+
+    <!-- Login & Sign Up   -->
+    <string name="login_welcome">Welcome</string>
+    <string name="login_continue">Sing in To Continue</string>
+    <string name="login_login">Login</string>
+    <string name="please_login">Please Login</string>
+    <string name="login_loading">Loading...</string>
+    <string name="login_sign_up">Sign Up</string>
+    <string name="login_skip">Skip</string>
+    <string name="login_email">Email*</string>
+    <string name="login_password">Password*</string>
+    <string name="login_conform_password">Conform Password*</string>
+    <string name="login_name">Name*</string>
+    <string name="login_phone_number">Phone Number*</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="hint_name">Enter Name</string>
+    <string name="hint_email">Enter Email</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="hint_confirm_password">Enter Confirm Password</string>
+    <string name="hint_phone_number">Enter Phone Number</string>
+    <string name="login_dot_n_have_account">Don\'t Have Account?</string>
+    <string name="login_already_account">Already have Account?</string>
+    <string name="login_continue_with">or Continue with</string>
+    <string name="login__fail">SignIn Failed</string>
+    <string name="login__fail_account">Cannot SignIn your account</string>
+    <string name="login__exception_error">There is something wrong.</string>
+    <string name="login__failure_error">Authentication failed.</string>
+    <string name="login__auth_email">This email is logged in with email and password. Please try to login with email and password.</string>
+    <string name="login__auth_google">This email is logged in with Google. Please try to login with Google.</string>
+    <string name="app__cancel">Cancel</string>
+    <string name="app__noti_open">Open</string>
+    <string name="app__noti_new_message">New Message</string>
+    <string name="success">SUCCESS</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="info">INFO</string>
+    <string name="error">ERROR</string>
+    <string name="warning">WARNING</string>
+    <string name="space_not_allowed">Space not allowed</string>
+    <string name="pass_not_match">Password Not Match</string>
+    <string name="success_register">Successfully Register! \n Login Your Account</string>
+    <string name="success_verify">Successfully Verify Your Account</string>
+    <string name="login_first_login">Please Login Your \n Account</string>
+
+    <!--    HomeScreen-->
+
+    <string name="menu_home">Home</string>
+    <string name="menu_category">Category</string>
+    <string name="menu_news">News</string>
+    <string name="menu_custom">Custom</string>
+    <string name="menu_business">Business</string>
+    <string name="menu_download">Download</string>
+    <string name="menu_language">Language</string>
+    <string name="menu_subscription">Subscribe</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_login">Login / Register</string>
+    <string name="menu_contact">Contact Us</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_user_info">User Info</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_rate">Rate App</string>
+    <string name="menu_share">Share This App</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="menu_privacy_policy">Privacy Policy</string>
+    <string name="menu_exit">Exit</string>
+
+    <string name="login_to_account">Login to Account</string>
+    <string name="success_logout">Successfully Logout</string>
+    <string name="latest_festivals">Latest Festivals</string>
+    <string name="trending">Trending</string>
+    <string name="business_category">Business Category</string>
+    <string name="latest_news">Latest News</string>
+    <string name="view_all">View All</string>
+    <string name="custom_categories">Custom Categories</string>
+
+    <string name="select_languages">Select Languages</string>
+    <string name="all_languages">All Languages</string>
+    <string name="save">Save</string>
+
+    <string name="message__cancel_close">Cancel</string>
+    <string name="message__want_to_logout">Do you really want to logout?</string>
+    <string name="message__logout">Logout</string>
+
+    <string name="err_add_image">Please Select Images</string>
+    <string name="success_profile">Successfully Update Profile</string>
+    <string name="message_contact">Successfully Send Contact \n As soon as Possible we will contact you</string>
+    <string name="fail_message_contact">Response is Fail! \n Try again</string>
+
+    <string name="force_update_true">Update is available</string>
+    <string name="force_update__button_update"> Update </string>
+    <string name="version_update"> Version Update </string>
+
+    <string name="do_you_want_to_exit">Do you want to exit?</string>
+    <string name="yes">Yes</string>
+
+    <string name="festival_image_create">Festival Images will created once \n it\'s show</string>
+    <string name="no_festival_image">No Festival Images</string>
+
+    <!-- Verify Email -->
+    <string name="verify_email__informateion">You\'ve just received an email containing verification code on</string>
+    <string name="verify_email__enter_code">Enter verification code</string>
+    <string name="invalid_enter_code">Invalid verification code</string>
+    <string name="verify_email__change_email">Change Email</string>
+    <string name="verify_email__resent_code">Resent Code</string>
+    <string name="verify_email__submit">Submit</string>
+    <string name="verify_email__title">Email Verification</string>
+
+    <!--Business-->
+
+    <string name="edit">Edit</string>
+    <string name="default_business">Default</string>
+    <string name="delete">Delete</string>
+    <string name="add_business">+Add</string>
+    <string name="business_name">Business Name*</string>
+    <string name="business_email">Business Email*</string>
+    <string name="business_phone_number">Business Phone Number*</string>
+    <string name="business_website">Business Website*</string>
+    <string name="business_address">Business Address*</string>
+    <string name="hint_business_name">Enter Business Name</string>
+    <string name="hint_business_email">Enter Business Email</string>
+    <string name="hint_business_number">Enter Business Number</string>
+    <string name="hint_business_website">Enter Business Website</string>
+    <string name="hint_business_address">Enter Business Address</string>
+    <string name="choose_image">+Choose Image</string>
+    <string name="add_business_titles">Add Business</string>
+    <string name="edit_business_titles">Edit Business</string>
+    <string name="invalid_email">Enter Valid Email</string>
+    <string name="please_add_business_titles">Please Add Your Business \n for Create Post</string>
+    <string name="your_business_limit">Your Business Limit is Full \n Upgrade Your Plan</string>
+
+    <!--Editor Screen-->
+    <string name="name">Name</string>
+    <string name="logo">Logo</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="add_text">Add Text</string>
+    <string name="add_image">Add Image</string>
+    <string name="text_color">Text Color</string>
+    <string name="font">Font</string>
+    <string name="text_size">Text Size</string>
+    <string name="create">Create</string>
+    <string name="frame">Frames</string>
+    <string name="edit_text">Edit Text</string>
+    <string name="letter_space">Latter Space</string>
+    <string name="line_space">Line Space</string>
+    <string name="opacity">Opacity</string>
+    <string name="color">Color</string>
+    <string name="select">Select</string>
+    <string name="select_image">Select Image</string>
+    <string name="select_image_msg">Select an Image from Gallery or from Camera to Make Post</string>
+    <string name="camera">Camera</string>
+    <string name="Gallery">Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="sticker">Sticker</string>
+    <string name="select_sticker">Select Sticker</string>
+    <string name="err_creating_image">Error while creating image</string>
+    <string name="err_save_image">Error while saving image</string>
+    <string name="save_title">Save &amp; Share Post</string>
+    <string name="don_t_create">Can\'t create directory to save image</string>
+    <string name="image_saved">Image Save Successfully</string>
+    <string name="video_saved">Video Save Successfully</string>
+    <string name="share_via">Share Via</string>
+    <string name="sure_delete">Are you sure you want to delete this post?</string>
+    <string name="sure_delete_business">Are you sure you want to delete this business?</string>
+    <string name="image_deleted">Image Deleted</string>
+    <string name="video_deleted">Video Deleted</string>
+    <string name="error_delete">Error Deleting Image</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="video">Video</string>
+    <string name="image">Image</string>
+
+    <!--Subscribe-->
+    <string name="subscribe_now">SUBSCRIBE NOW</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="premium">Premium Post</string>
+    <string name="please_subscribe">This is a Premium Post \n Please subscribe</string>
+    <string name="please_subscribe_frame">This is a Premium Frame \n Please subscribe</string>
+    <string name="payments">Payments</string>
+    <string name="card_upi_net_banking">Pay with Cards / UPI / NetBanking</string>
+    <string name="loading_payment_info">Payment Info..</string>
+    <string name="tansaction_succeed">Your Transaction was Successfully \n Complete. Enjoy Premium Access!</string>
+    <string name="plan_selected">Plan Selected</string>
+    <string name="have_a_promo_code">Have a Promo Code?</string>
+    <string name="enter_promo_code">Enter Promo Code</string>
+    <string name="apply">Apply</string>
+    <string name="total_payable">Total Payable</string>
+    <string name="applied_code">Applied Code</string>
+    <string name="discount_on">Discount On</string>
+
+    <!--Settings-->
+    <string name="device_settings">Device Settings</string>
+    <string name="notification">Notifications</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="refund_policy">Refund Policy</string>
+    <string name="terms_and_service">Terms &amp; Service</string>
+    <string name="version">Version</string>
+    <string name="theme">Theme</string>
+    <string name="system_default">System Default</string>
+    <string name="pryvacy_settings">Privacy Settings</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="ok">Ok</string>
+    <string name="try_again">Try Again</string>
+    <string name="click_try_again">Click On Try Again</string>
+    <string name="no">No</string>
+    <string name="select_theme">Select Theme</string>
+    <string name="please_enter_valid_mobile">Please Enter Valid Mobile</string>
+
+    <string-array name="theme_array">
+        <item>@string/system_default</item>
+        <item>@string/dark</item>
+        <item>@string/light</item>
+    </string-array>
+
+    <string name="select_sub">Select Subject</string>
+    <string name="massage">Massage*</string>
+    <string name="enter_details">Enter Details</string>
+
+    <!--Profile-->
+    <string name="manage_profile">Manage Profile</string>
+    <string name="subscription_plan">Subscription Plan</string>
+    <string name="upgrade_your_plan">Upgrade Your Subscription</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="joined_date">Joined date</string>
+    <string name="not_subscribe">Not subscribe</string>
+    <string name="change_password">Change Password</string>
+    <string name="view_plan">View Plan</string>
+    <string name="account_details">Account Details</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="old_password">Old Password</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="change">Change</string>
+    <string name="don_t_remember_pass">Don\'t Remember Your Password?</string>
+    <string name="click_here">Click Here</string>
+    <string name="forgot_msg">Enter your registered email address below \n we will send you email to change your password</string>
+    <string name="send">Send</string>
+
+    <!--About-->
+    <string name="author">Author</string>
+    <string name="company">Company</string>
+    <string name="developed_by">Developed by</string>
+    <string name="contact">Contact</string>
+    <string name="description">Description</string>
+
+    <!--VCard-->
+    <string name="enter_business_name">Enter Your Business name</string>
+    <string name="enter_name">Enter Your Name</string>
+    <string name="enter_designation">Enter Your Designation</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="whatsapp_number">Whatsapp Number</string>
+    <string name="enter_email">Enter Your Email</string>
+    <string name="enter_website">Enter Your Website</string>
+    <string name="enter_location">Enter Your Location</string>
+    <string name="enter_facebook_username">Enter your Facebook Username</string>
+    <string name="enter_instagram_username">Enter your Instagram Username</string>
+    <string name="enter_twitter_username">Enter your Twitter Username</string>
+    <string name="enter_youtube_channel">Enter your YouTube Channel</string>
+    <string name="enter_linkedin_username">Enter your LinkedIn Username</string>
+
+    <!-- Eraser -->
+    <string name="cut_photo">Select Photo</string>
+    <string name="offset">Offset</string>
+    <string name="radius">Size</string>
+    <string name="threshold">Threshold</string>
+    <string name="cut_outside">Cut Outside</string>
+    <string name="cut_inside">Cut Inside</string>
+    <string name="msg_auto_btn">Click AUTO button to perform auto erase</string>
+    <string name="msg_lasso_btn">Click EXTRACT button</string>
+    <string name="msg_manual_btn">Click MANUAL button to manually erase</string>
+    <string name="msg_bw_btn">Click RESTORE button to restore image</string>
+    <string name="msg_zoom_btn">Click ZOOM button to drag and zoom image.</string>
+    <string name="auto">Auto</string>
+    <string name="lasso">Extract</string>
+    <string name="erase">Manual</string>
+    <string name="restore">Restore</string>
+    <string name="zoom">Zoom</string>
+    <string name="msg_up_arrow">Click UP arrow to get options</string>
+    <string name="drag_color">Drag POINTER to earse.</string>
+    <string name="msg_draw_lasso">Draw a closed path.</string>
+    <string name="redoing">Redoing</string>
+    <string name="drag_bw">Drag POINTER to restore image.</string>
+    <string name="undoing">Undoing</string>
+    <string name="import_img_warning">Please import image!!!</string>
+    <string name="create_dir_err">Cant create directory to save image.</string>
+    <string name="importing_image">Importing image…</string>
+    <string name="import_error">Error while getting image.</string>
+    <string name="alert">Unsaved work</string>
+
+
+    <!-- Applications -->
+    <string name="share_msg">Festival Poster Maker, Business Post, Political Post Maker App</string>
+</resources>

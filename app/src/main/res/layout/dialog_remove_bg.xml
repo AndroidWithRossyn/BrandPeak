@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_login_screen">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8ssp"
+        android:text="Image Preview"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_100ssp"
+                android:layout_height="@dimen/_100ssp"
+                android:layout_marginHorizontal="@dimen/_20ssp"
+                android:layout_marginTop="@dimen/_8ssp"
+                android:elevation="@dimen/_4ssp"
+                app:cardCornerRadius="@dimen/_4ssp"
+                app:layout_constraintEnd_toStartOf="@+id/divider5"
+                app:layout_constraintTop_toTopOf="@+id/divider5">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_real"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    android:visibility="gone"
+                    android:scaleType="fitXY"
+                    app:lottie_fileName="scan.json"
+                    app:lottie_loop="true" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_real"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_8ssp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/active_color"
+                android:text="Use This"
+                android:textAllCaps="false"
+                android:textColor="@color/al_white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_bo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_2ssp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue_color"
+                android:text="Use Original"
+                android:textAllCaps="false"
+                android:textColor="@color/al_white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_remove"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_100ssp"
+                android:layout_height="@dimen/_100ssp"
+                android:layout_marginHorizontal="@dimen/_20ssp"
+                android:layout_marginTop="@dimen/_8ssp"
+                android:elevation="@dimen/_4ssp"
+                app:cardCornerRadius="@dimen/_4ssp"
+                app:layout_constraintStart_toEndOf="@+id/divider5"
+                app:layout_constraintTop_toTopOf="@+id/divider5">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@drawable/tpbg" />
+
+                <ImageView
+                    android:id="@+id/iv_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/tpbg"
+                    android:scaleType="fitCenter"
+                     />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_8ssp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/active_color"
+                android:text="Use This"
+                android:textAllCaps="false"
+                android:textColor="@color/al_white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_2ssp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue_color"
+                android:text="Erase Manually"
+                android:textAllCaps="false"
+                android:textColor="@color/al_white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

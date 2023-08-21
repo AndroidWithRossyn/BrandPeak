@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View"/>
+        <variable
+            name="business"
+            type="com.itsbusinessposter.idebrandvideo.items.BusinessItem" />
+
+    </data>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5ssp"
+        app:cardBackgroundColor="@color/bg_login_screen"
+        app:cardCornerRadius="@dimen/_4ssp"
+        app:cardElevation="@dimen/_2ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/iv_business"
+                android:layout_width="@dimen/_50ssp"
+                android:layout_height="@dimen/_50ssp"
+                android:layout_marginVertical="@dimen/_4ssp"
+                android:layout_marginStart="@dimen/_5ssp"
+                android:src="@drawable/ic_profile"
+                app:circle_imageURL="@{business.logo}"
+                app:civ_border_color="@color/primary_color"
+                app:civ_border_width="@dimen/_2ssp"
+                app:civ_shadow="false"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout12" />
+
+            <TextView
+                android:id="@+id/tv_business_name"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/_4ssp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/_8ssp"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@{business.name}"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:fonts='@{"bold"}'
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout12"
+                app:layout_constraintStart_toEndOf="@+id/iv_business"
+                app:layout_constraintTop_toTopOf="@+id/iv_business"
+                app:textSize='@{"font_h7_size"}'
+                tools:text="@string/menu_business" />
+
+            <TextView
+                android:id="@+id/tv_business_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/_8ssp"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/_2ssp"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@{business.phone}"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:fonts='@{"normal"}'
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout12"
+                app:layout_constraintStart_toEndOf="@+id/iv_business"
+                app:layout_constraintTop_toBottomOf="@+id/tv_business_name"
+                app:textSize='@{"font_body_size"}'
+                tools:text="@string/phone" />
+
+            <TextView
+                android:id="@+id/tv_business_default"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20ssp"
+                android:background="@drawable/business_default"
+                android:gravity="center"
+                app:fonts='@{"bold"}'
+                app:textSize='@{"font_body_s_size"}'
+                android:paddingStart="@dimen/_5ssp"
+                android:paddingEnd="@dimen/_5ssp"
+                android:visibility="gone"
+                android:text="@string/default_business"
+                android:textColor="@color/al_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_5ssp"
+                android:layout_height="wrap_content"
+                app:fonts='@{"bold"}'
+                app:textSize='@{"font_body_xs_size"}'
+                android:buttonTint="@color/nav_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8ssp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_5ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_business_edit"
+                    android:layout_width="@dimen/_25ssp"
+                    android:layout_height="@dimen/_25ssp"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    app:cardBackgroundColor="@color/green_700"
+                    app:cardCornerRadius="@dimen/_4ssp"
+                    app:cardElevation="@dimen/_2ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cv2"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_business_name">
+
+                    <ImageView
+                        android:id="@+id/iv_business_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_edit"
+                        android:textColor="@color/white" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_business_delete"
+                    android:layout_width="@dimen/_25ssp"
+                    android:layout_height="@dimen/_25ssp"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    app:cardBackgroundColor="@color/red_700"
+                    app:cardCornerRadius="@dimen/_4ssp"
+                    app:cardElevation="@dimen/_2ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cv1"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_business_name">
+
+                    <ImageView
+                        android:id="@+id/iv_business_delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="3dp"
+                        android:src="@drawable/ic__delete"
+                        android:textColor="@color/white" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+</layout>

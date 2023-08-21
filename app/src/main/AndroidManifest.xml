@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.itsbusinessposter.idebrandvideo">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.itsbusinessposter.idebrandvideo.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FestivalApp">
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.EraserActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.CreateVCardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.VCardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.CustomCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.PrivacyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.NewsDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.ForgotPassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.ProfileEditActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.BusinessCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.ProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.ContactUsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.SettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.SubsPlanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.EditorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.AddBusinessActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.DetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.CategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.FestivalActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.IntroActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.SplashyActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.itsbusinessposter.idebrandvideo.ui.activities.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:screenOrientation="portrait"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.itsbusinessposter.idebrandvideo.binding.CachingGlideModule"
+            android:value="AppGlideModule" />
+        <meta-data
+            android:name="com.onesignal.NotificationServiceExtension"
+            android:value="com.iqueen.brandpeak.utils.NotificationServiceExtension" />
+    </application>
+
+</manifest>

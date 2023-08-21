@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="categoryData"
+            type="com.itsbusinessposter.idebrandvideo.items.StickerCategory" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_4ssp"
+                android:gravity="center"
+                android:background="@drawable/str_cat_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_6ssp"
+                    android:layout_marginVertical="@dimen/_2ssp"
+                    android:gravity="center"
+                    tools:text="TextView"
+                    android:text="@{categoryData.name}"
+                    app:textSize='@{"font_body_s_size"}'
+                    android:textColor="@color/al_white"
+                    app:fonts='@{"bold"}'
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </LinearLayout>
+
+    </RelativeLayout>
+</layout>

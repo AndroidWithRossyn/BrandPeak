@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100ssp"
+            android:background="@color/primary_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/informationTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30ssp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:layout_marginEnd="@dimen/_30ssp"
+                android:text="@string/verify_email__informateion"
+                android:textAlignment="center"
+                android:textColor="@color/al_white"
+                app:fonts='@{"bold"}'
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textSize='@{"font_body_size"}' />
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8ssp"
+                android:layout_marginEnd="@dimen/_8ssp"
+                android:textAlignment="center"
+                android:textColor="@color/al_white"
+                app:fonts='@{"normal"}'
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/informationTextView"
+                app:textSize='@{"font_body_s_size"}'
+                tools:text="Someone@gmail.com" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="@dimen/_80ssp"
+            android:layout_height="@dimen/_80ssp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/_60ssp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_very_email_icon" />
+
+       <!-- <EditText
+            android:id="@+id/enterCodeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            android:hint="@string/verify_email__enter_code"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_2ssp"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            app:fonts='@{"normal"}'
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView31"
+            app:textSize='@{"font_body_s_size"}' />
+-->
+        <com.itsbusinessposter.idebrandvideo.ui.view.OtpEditText
+            android:id="@+id/otp_edit_text_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:cursorVisible="true"
+            android:layout_marginEnd="8dp"
+            android:padding="@dimen/_2ssp"
+            android:focusable="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:hint="@string/verify_email__enter_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView31"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textIsSelectable="true"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/view19"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submitButton" />
+
+        <Button
+            android:id="@+id/changeEmailButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingStart="@dimen/_16ssp"
+            android:paddingTop="@dimen/_16ssp"
+            android:paddingEnd="@dimen/_16ssp"
+            android:paddingBottom="@dimen/_16ssp"
+            android:text="Change Number"
+            android:textAllCaps="false"
+            android:textColor="@color/active_color"
+            app:fonts='@{"normal"}'
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view19"
+            app:textSize='@{"button_text_14"}' />
+
+        <Button
+            android:id="@+id/resentCodeButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="@dimen/_16ssp"
+            android:paddingTop="@dimen/_16ssp"
+            android:paddingEnd="@dimen/_16ssp"
+            android:paddingBottom="@dimen/_16ssp"
+            android:text="@string/verify_email__resent_code"
+            android:textAllCaps="false"
+            android:textColor="@color/active_color"
+            app:fonts='@{"normal"}'
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view19"
+            app:textSize='@{"button_text_14"}' />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8ssp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blue_color"
+            android:text="@string/verify_email__submit"
+            android:textColor="@color/al_white"
+            android:textSize="18sp"
+            app:fonts='@{"normal"}'
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/otp_edit_text_login_activity" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

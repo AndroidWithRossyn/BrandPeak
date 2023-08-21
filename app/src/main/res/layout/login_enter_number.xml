@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_phone_input_login_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5ssp"
+        android:padding="4dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/bg_google_btn"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_marginBottom="@dimen/_10ssp"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:text="Enter your phone number"
+            android:textColor="@color/active_color"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/CountryCodePicker"
+                app:ccp_textColor="@color/active_color"
+                app:ccp_textSize="@dimen/_10ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40ssp"
+                android:layout_marginEnd="@dimen/_5ssp"
+                android:layout_marginStart="@dimen/_2ssp"
+                android:background="@drawable/bg_season_tab"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10ssp"
+                android:paddingRight="@dimen/_10ssp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/edit_text_phone_number_login_acitivty"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40ssp"
+                android:background="@drawable/bg_season_tab"
+                android:gravity="center|left"
+                android:layout_marginEnd="@dimen/_5ssp"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:paddingLeft="@dimen/_10ssp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_confirm_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_33ssp"
+            android:layout_margin="@dimen/_4ssp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+
+            android:elevation="@dimen/_2ssp"
+            android:gravity="left|center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_loading_subtitles_accent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_33ssp"
+                    android:layout_height="@dimen/_33ssp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10ssp"
+                    android:padding="@dimen/_5ssp"
+                    app:srcCompat="@drawable/ic_send"
+                    app:tint="@color/al_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40ssp"
+                    android:layout_marginRight="@dimen/_40ssp"
+                    android:gravity="center"
+                    android:text="Send the verification code"
+                    android:textColor="@color/al_white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_login_screen"
+        tools:context="com.itsbusinessposter.idebrandvideo.ui.activities.AddBusinessActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_layout"
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingHorizontal="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/ll_adview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/iv_business"
+                        android:layout_width="@dimen/_65ssp"
+                        android:layout_height="@dimen/_65ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        android:src="@drawable/ic_profile"
+                        app:civ_border_color="@color/primary_color"
+                        app:civ_border_width="@dimen/_3ssp"
+                        app:civ_shadow="false" />
+
+                    <Button
+                        android:id="@+id/btn_add_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:backgroundTint="@color/al_gray"
+                        android:text="@string/choose_image"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black_1000"
+                        app:fonts='@{"bold"}'
+                        app:textSize='@{"button_text_14"}' />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:text="@string/name"
+                    android:textColor="@color/black"
+                    app:fonts='@{"bold"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_business"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:background="@drawable/white_shape_edit"
+                    android:hint="@string/hint_name"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="@dimen/_8ssp"
+                    android:paddingVertical="@dimen/_8ssp"
+                    app:fonts='@{"normal"}'
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    app:fonts='@{"bold"}'
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessName"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:background="@drawable/white_shape_edit"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="@dimen/_8ssp"
+                    android:paddingVertical="@dimen/_8ssp"
+                    app:fonts='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="@+id/etBusinessName"
+                    app:layout_constraintStart_toStartOf="@+id/textView10"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:text="@string/phone"
+                    android:textColor="@color/black"
+                    app:fonts='@{"bold"}'
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessNumber"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:background="@drawable/white_shape_edit"
+                    android:hint="@string/hint_phone_number"
+                    android:inputType="number"
+                    android:paddingHorizontal="@dimen/_8ssp"
+                    android:paddingVertical="@dimen/_8ssp"
+                    app:fonts='@{"normal"}'
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="@dimen/_10ssp"
+                    android:backgroundTint="@color/blue_color"
+                    android:paddingHorizontal="@dimen/_10ssp"
+                    android:paddingVertical="@dimen/_8ssp"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/al_white"
+                    app:fonts='@{"bold"}'
+                    app:textSize='@{"button_text_16"}' />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_adview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

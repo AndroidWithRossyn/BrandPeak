@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itsbusinessposter.idebrandvideo.ui.activities.SettingActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8ssp"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:text="@string/device_settings"
+        android:textColor="@color/blue_color"
+        app:fonts='@{"bold"}'
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:textSize='@{"font_title_size"}' />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        app:cardCornerRadius="@dimen/_2ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8ssp"
+        android:elevation="@dimen/_2ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="@dimen/_10ssp"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:text="@string/notification"
+                android:textColor="@color/black"
+                app:fonts='@{"bold"}'
+                app:textSize='@{"font_body_size"}' />
+
+            <Switch
+                android:id="@+id/sw_notification"
+                style="@style/switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_theme"
+        app:cardCornerRadius="@dimen/_2ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8ssp"
+        android:elevation="@dimen/_2ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="@dimen/_10ssp"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:text="@string/theme"
+                android:textColor="@color/black"
+                app:fonts='@{"bold"}'
+                app:textSize='@{"font_body_size"}' />
+
+            <Switch
+                android:id="@+id/sw_theme"
+                style="@style/switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_clear_cache"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8ssp"
+        android:elevation="@dimen/_2ssp"
+        app:cardCornerRadius="@dimen/_2ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_theme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_cache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="@dimen/_10ssp"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:text="@string/clear_cache"
+                android:textColor="@color/black"
+                app:fonts='@{"bold"}'
+                app:textSize='@{"font_body_size"}' />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="@dimen/_25ssp"
+                android:layout_height="@dimen/_25ssp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_8ssp"
+                app:srcCompat="@drawable/ic_clear_cache"
+                app:tint="@color/txt_gray" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8ssp"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:text="@string/pryvacy_settings"
+        android:textColor="@color/blue_color"
+        app:fonts='@{"bold"}'
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/cv_clear_cache"
+        app:textSize='@{"font_title_size"}' />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_refund"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8ssp"
+        android:elevation="@dimen/_2ssp"
+        app:cardCornerRadius="@dimen/_2ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="@dimen/_10ssp"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:text="@string/refund_policy"
+                android:textColor="@color/black"
+                app:fonts='@{"bold"}'
+                app:textSize='@{"font_body_size"}' />
+
+            <ImageView
+                android:layout_width="@dimen/_25ssp"
+                android:layout_height="@dimen/_25ssp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_8ssp"
+                app:srcCompat="@drawable/ic_refund"
+                app:tint="@color/txt_gray" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_privacy_policy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8ssp"
+        android:elevation="@dimen/_2ssp"
+        app:cardCornerRadius="@dimen/_2ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_refund">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="@dimen/_10ssp"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:text="@string/menu_privacy_policy"
+                android:textColor="@color/black"
+                app:fonts='@{"bold"}'
+                app:textSize='@{"font_body_size"}' />
+
+            <ImageView
+                android:layout_width="@dimen/_25ssp"
+                android:layout_height="@dimen/_25ssp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_8ssp"
+                app:srcCompat="@drawable/ic_privacy"
+                app:tint="@color/txt_gray" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_term_service"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8ssp"
+        android:elevation="@dimen/_2ssp"
+        app:cardCornerRadius="@dimen/_2ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_privacy_policy">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="@dimen/_10ssp"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:text="@string/terms_and_service"
+                android:textColor="@color/black"
+                app:fonts='@{"bold"}'
+                app:textSize='@{"font_body_size"}' />
+
+            <ImageView
+                android:layout_width="@dimen/_25ssp"
+                android:layout_height="@dimen/_25ssp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_8ssp"
+                app:srcCompat="@drawable/ic_term"
+                app:tint="@color/txt_gray" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_version"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8ssp"
+        android:elevation="@dimen/_2ssp"
+        app:cardCornerRadius="@dimen/_2ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_term_service">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="@dimen/_10ssp"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:text="@string/version"
+                android:textColor="@color/black"
+                app:fonts='@{"bold"}'
+                app:textSize='@{"font_body_size"}' />
+
+            <ImageView
+                android:layout_width="@dimen/_25ssp"
+                android:layout_height="@dimen/_25ssp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_8ssp"
+                app:srcCompat="@drawable/ic_version"
+                app:tint="@color/txt_gray" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/ll_adview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

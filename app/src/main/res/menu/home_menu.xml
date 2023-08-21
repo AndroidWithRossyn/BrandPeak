@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@drawable/ic_home"
+        android:title="@string/menu_home"
+        />
+    <item
+        android:id="@+id/news_menu"
+        android:icon="@drawable/ic_news"
+        android:title="@string/menu_news"
+        />
+
+    <item
+        android:id="@+id/custom_menu"
+        android:icon="@drawable/ic_custom"
+        android:title="@string/menu_custom"
+        />
+
+    <item
+        android:id="@+id/business_menu"
+        android:icon="@drawable/ic_business"
+        android:title="@string/menu_business"
+        />
+
+    <item
+        android:id="@+id/download_menu"
+        android:icon="@drawable/ic_download"
+        android:title="@string/menu_download"
+        />
+</menu>

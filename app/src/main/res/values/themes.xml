@@ -1,0 +1,106 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FestivalApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primary_dark_color</item>
+        <item name="colorSecondaryVariant">@color/primary_dark_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlActivated">#FFC107</item>
+        <item name="colorControlNormal">#A3A3A3</item>
+    </style>
+    <style name="ThemeAlertDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#00f</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#f00</item>
+    </style>
+
+    <!-- Toolbar Event -->
+    <style name="ToolBarStyle.Event" parent="ToolBarStyle">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Event.Toolbar.Title</item>
+    </style>
+
+    <style name="ToolBarStyle.Base" parent="">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.DayNight</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.DayNight</item>
+    </style>
+
+
+    <style name="ToolBarStyle" parent="ToolBarStyle.Base" />
+
+    <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--Any text styling can be done here-->
+        <item name="android:color">@color/al_white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+
+    </style>
+
+    <style name="CustomRadioTheme" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="buttonTint">@color/nav_color</item>
+    </style>
+
+    <style name="checkbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="tint">@color/nav_color</item>
+    </style>
+
+    <style name="switcher" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:thumbTint">@color/nav_color</item>
+        <item name="android:trackTint" tools:ignore="NewApi">@color/nav_color</item>
+    </style>
+
+    <style name="AppBackButton">
+        <item name="android:layout_width">?attr/actionBarSize</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:padding">19dp</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="srcCompat">@drawable/ic_arrow_back_black</item>
+        <item name="tint">@color/al_white</item>
+    </style>
+    <style name="ImageViewBottom">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/app_menu_back</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="TextViewBottom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="TextViewBottom2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint" tools:targetApi="lollipop">@color/gray</item>
+        <item name="android:progressTint" tools:targetApi="lollipop">@color/active_color</item>
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">@color/active_color</item>
+    </style>
+</resources>
